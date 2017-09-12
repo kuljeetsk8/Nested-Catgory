@@ -29,6 +29,7 @@ function include_template_functions() {
 // Override the WooCommerce template functions.
 add_action( 'after_setup_theme', array( $this, 'include_template_functions' ) );
 
+add_action( 'wc_nested_category_layout_category_title_html', sprintf( '<h2 class="wc-nested-category-layout-category-title">%s</h2>', $title ), $categories, $term );
 
 
 

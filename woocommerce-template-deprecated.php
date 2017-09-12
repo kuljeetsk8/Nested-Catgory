@@ -29,3 +29,5 @@
  */
 
 defined( 'ABSPATH' ) or exit;
+echo wp_kses_post( apply_filters( 'wc_nested_category_layout_category_title_html', sprintf( '<h2 class="wc-nested-category-layout-category-title">%s</h2>', $title ), $categories, $term ) );
+?>
